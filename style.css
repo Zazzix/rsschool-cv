@@ -10,32 +10,59 @@ body {
     flex-direction: column;
     min-height: 100vh;
     max-width: 1440px;
+    align-items: center;
 }
 
 
-.main {
-    border: 1px solid red;
-}
-
-.footer {
-    border: 1px solid red;
-}
 
 .header {
     border: 1px solid red;
     display: flex;
     width: 1110px;
     justify-content: space-between;
-    align-self: center;
+
+    margin-top: 30px;
 }
 
-.title  {
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 100px;
 }
 
-h1  {
+h1 {
     margin-bottom: 50px;
+}
+
+
+.main {
+    border: 1px solid red;
+    width: 1110px;
+    display: flex;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5;
+    background-color: #282828;
+    color: #FFFFFF;
+}
+
+.skills {
+    width: 350px;
+}
+
+
+
+.footer {
+    border: 1px solid red;
+    margin-top: auto;
 }
