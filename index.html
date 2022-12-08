@@ -35,7 +35,25 @@
                     <p>Zazzix#9083</p>
                 </div>
             </div>
-            <div class="about"></div>
+            <article class="info">
+            <div class="about">
+                <h2>About myself</h2>
+                <p>Feeling passionate about learning new things. Good communication skills.<br> I’ve spent 1 year living and working abroad in China. Currently working as CSS representative.</p>
+            </div>
+            <div class="code">
+                <h2>Code example</h2>
+                <pre><code>
+CREATE TABLE clients (
+id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+first_name VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+email VARCHAR(100) NOT NULL,
+passport VARCHAR(10) NOT NULL,
+UNIQUE KEY email (email),
+UNIQUE KEY passport (passport));                     
+                </pre></code>        
+            </div>
+            </article>
         </div>
         <div class="skills"></div>
     </main>
