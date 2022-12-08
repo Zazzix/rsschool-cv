@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1440px;
+}
+
+
+.main {
+    border: 1px solid red;
+}
+
+.footer {
+    border: 1px solid red;
+}
+
+.header {
+    border: 1px solid red;
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.title  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+h1  {
+    margin-bottom: 50px;
+}
