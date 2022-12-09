@@ -15,7 +15,6 @@ body {
 
 
 .header {
-    border: 1px solid red;
     display: flex;
     width: 1110px;
     justify-content: space-between;
@@ -36,7 +35,6 @@ h1 {
 
 
 .main {
-    border: 1px solid red;
     width: 1110px;
     display: flex;
     flex: 1;
@@ -54,43 +52,46 @@ h1 {
     line-height: 1.5;
     background-color: #282828;
     color: #FFFFFF;
+    padding: 20px 0px 20px 0px;
 }
 
-.info   {
+.info {
     display: flex;
     flex-direction: column;
 }
 
-.about  {
+.about {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
-    text-align: center;
+    width: 660px;
+
 }
 
-.about > h2 {
-    text-align: center;
+.about>h2 {
     margin-bottom: 25px;
+    margin-left: 100px;
 }
 
-.code   {
+.code {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 
-.code > h2 {
-    text-align: center;
+.code>h2 {
+    margin-left: 100px;
     margin-bottom: 25px;
 }
 
-pre {
+code {
     width: 420px;
-    line-height: 1.5;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
-.perks   {
+.perks {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -98,26 +99,34 @@ pre {
     justify-content: space-around;
     align-items: center;
     border: 5px solid #282828;
+    padding: 100px 0px 100px 0px;
+    gap: 50px;
 }
 
 .skills,
 .education,
-.languages{
+.languages {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     gap: 25px;
-    width: 250px;
+    width: 150px;
 }
 
 
 
-
-
-
-
-
-
 .footer {
-    border: 1px solid red;
-    margin-top: auto;
+    margin-top: 50px;
+    height: 70px;
+    width: 1110px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.footer>p,
+a {
+    font-size: 32px;
+    text-decoration: none;
 }

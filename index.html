@@ -36,23 +36,27 @@
                 </div>
             </div>
             <article class="info">
-            <div class="about">
-                <h2>About myself</h2>
-                <p>Feeling passionate about learning new things. Good communication skills.<br> I’ve spent 1 year living and working abroad in China. Currently working as CSS representative.</p>
-            </div>
-            <div class="code">
-                <h2>Code example</h2>
-                <pre><code>
-CREATE TABLE clients (
-id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-first_name VARCHAR(50) NOT NULL,
-last_name VARCHAR(50) NOT NULL,
-email VARCHAR(100) NOT NULL,
-passport VARCHAR(10) NOT NULL,
-UNIQUE KEY email (email),
-UNIQUE KEY passport (passport));                     
-                </pre></code>        
-            </div>
+                <div class="about">
+                    <h2>About myself</h2>
+                    <p>Feeling passionate about learning new things. Good communication skills.<br> I’ve spent 1 year
+                        living and working abroad in China. Currently working as CSS representative.</p>
+                </div>
+                <div class="code">
+                    <h2>Code example</h2>
+                    <code>
+    SELECT TIME_FORMAT(ca.date, '%H:%i') as time,
+    CONCAT_WS(" ", m.first_name, m.last_name) as manager,
+    CONCAT_WS(" ", cl.first_name, cl.last_name) as client,
+    co.name as company, time_format(SEC_TO_TIME(ca.duration_sec),
+    '%H:%i:%s') as duration 
+    FROM calls as ca 
+    RIGHT JOIN clients as cl ON cl.id = ca.client_id 
+    LEFT JOIN companies as co ON co.id = cl.company_id 
+    JOIN managers as m ON m.id = ca.manager_id 
+    WHERE month(ca.date)=4 and DAYOFMONTH(ca.date)=5;
+                                      
+                </code>
+                </div>
             </article>
         </div>
         <aside class="perks">
@@ -77,14 +81,17 @@ UNIQUE KEY passport (passport));
                 <h2>Languages</h2>
                 <ul>
                     <li>Russian - Native</li>
-                    <li>English  - C1</li>
+                    <li>English - C1</li>
                     <li>Chinese - HSK 3</li>
                 </ul>
             </div>
         </aside>
     </main>
     <footer class="footer">
-
+        <a href="https://github.com/Zazzix" target="_blank">GitHub</a>
+        <a href="https://rs.school/js/" target="_blank"><img src="/assets/svg/rs_school_js.svg" height="60"
+                width="190" alt="rs school logo"></a>
+        <p>2022</p>
     </footer>
 </body>
 
