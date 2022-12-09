@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-width: 1440px;
     align-items: center;
 }
 
@@ -40,6 +39,7 @@ h1 {
     border: 1px solid red;
     width: 1110px;
     display: flex;
+    flex: 1;
 }
 
 .bio {
@@ -90,11 +90,29 @@ pre {
     line-height: 1.5;
 }
 
-
-
-.skills {
-    min-width: 350px;
+.perks   {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 350px;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid #282828;
 }
+
+.skills,
+.education,
+.languages{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 250px;
+}
+
+
+
+
+
 
 
 
