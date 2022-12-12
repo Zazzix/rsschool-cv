@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+.header {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+
+.main {
+    width: 1110px;
+    display: flex;
+    flex: 1;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5;
+    background-color: #282828;
+    color: #FFFFFF;
+    padding: 20px 0px 20px 0px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 660px;
+
+}
+
+.about>h2 {
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.code>h2 {
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+code {
+    width: 420px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.perks {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 350px;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid #282828;
+    padding: 100px 0px 100px 0px;
+    gap: 50px;
+}
+
+.skills,
+.education,
+.languages {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 25px;
+    width: 150px;
+}
+
+
+
+.footer {
+    margin-top: 50px;
+    height: 70px;
+    width: 1110px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.footer>p,
+a {
+    font-size: 32px;
+    text-decoration: none;
+}
